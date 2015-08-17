@@ -1,15 +1,7 @@
-# Fluent::Plugin::Logsene, a plugin for [Fluentd](http://fluentd.org)
-
-fluent output plugin for [Logsene](http://sematext.com/logsene)
-
-## Fluentd
-http://fluentd.org/
-
-## Logsene
-http://www.sematext.com/logsene
+# Logsene Fluent Plugin
+[Fluentd](http://fluentd.org) output plugin for [Logsene](http://sematext.com/logsene).
 
 ## Installation
-
 Add this line to your application's Gemfile:
 
     gem 'fluent-plugin-logsene'
