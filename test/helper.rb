@@ -22,7 +22,7 @@ unless ENV.has_key?('VERBOSE')
   $log = nulllogger
 end
 
-require 'fluent/plugin/out_sumologic'
+require 'fluent/plugin/out_logsene'
 
 class Test::Unit::TestCase
 end
