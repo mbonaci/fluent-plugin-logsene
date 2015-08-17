@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sematext"]
   spec.email         = ["info@sematext.com"]
   spec.description   = %q{fluent plugin for logsene}
-  spec.summary       = %q{logsene is log management system. this plugin is fluent output plugin send to logsene}
+  spec.summary       = %q{Logsene is a centralized log management solution from Sematext. The plugin is fluentd output plugin for Logsene}
   spec.homepage      = "https://github.com/mbonaci/fluent-plugin-logsene"
   spec.license       = "MIT"
 
