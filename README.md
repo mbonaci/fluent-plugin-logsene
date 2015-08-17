@@ -29,25 +29,11 @@ Simply replace the dummy application token in the `path` configuration setting w
         type logsene
         host logsene-receiver.sematext.com
         port 80
-        format json|text
+        format json
         path /5233x41x-3xx5-8754-x354-xxx1x018ex33x
       </match>
 
-
-#### type
-- logsene
-
-#### host
-- Hostname of HTTP Collectors URL
-
-#### port
-- Port of HTTP Collectors URL
-
-#### path
-- Path of HTTP Collectors URL
-
-#### format
-- json: send as json
+It's that simple!
 
 ## Contributing
 
