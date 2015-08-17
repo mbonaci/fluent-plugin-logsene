@@ -6,7 +6,7 @@ class Fluent::LogseneOutput< Fluent::BufferedOutput
   Fluent::Plugin.register_output('logsene', self)
 
   config_param :host, :string,  :default => 'logsene-receiver.sematext.com'
-  config_param :port, :integer, :default => 443
+  config_param :port, :integer, :default => 80
   config_param :path, :string,  :default => ''
   config_param :format, :string, :default => 'json'
 
@@ -57,7 +57,7 @@ class Fluent::LogseneOutput< Fluent::BufferedOutput
     end
 
     http = Net::HTTP.new(@host, @port.to_i)
-    http.use_ssl = true
+    http.use_ssl = false
     http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     http.set_debug_output $stderr
 
