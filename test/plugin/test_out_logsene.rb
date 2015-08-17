@@ -1,6 +1,6 @@
 require 'helper'
 
-class SumologicOutputTest < Test::Unit::TestCase
+class LogseneOutputTest < Test::Unit::TestCase
   def setup
     Fluent::Test.setup
   end
@@ -14,7 +14,7 @@ class SumologicOutputTest < Test::Unit::TestCase
   # ]
 
   def create_driver(conf = CONFIG, tag='test')
-    Fluent::Test::BufferedOutputTestDriver.new(Fluent::SumologicOutput, tag).configure(conf)
+    Fluent::Test::BufferedOutputTestDriver.new(Fluent::LogseneOutput, tag).configure(conf)
   end
 
   def test_configure
