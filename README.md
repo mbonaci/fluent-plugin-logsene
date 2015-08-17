@@ -25,13 +25,13 @@ Or install it yourself as:
 ## Usage
 Simply replace the dummy application token in the `path` configuration setting with the one you can find on the `App Actions > App Settings` or the `Integration` page when you sign in on [sematext.com](sematext.com).
 
-  <match *.apache.*>
-    type logsene
-    host logsene-receiver.sematext.com
-    port 80
-    format json|text
-    path /5233x41x-3xx5-8754-x354-xxx1x018ex33x
-  </match>
+      <match *.apache.*>
+        type logsene
+        host logsene-receiver.sematext.com
+        port 80
+        format json|text
+        path /5233x41x-3xx5-8754-x354-xxx1x018ex33x
+      </match>
 
 
 #### type
