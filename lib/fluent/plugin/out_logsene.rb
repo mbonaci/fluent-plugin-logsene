@@ -3,9 +3,9 @@ require 'net/http'
 require 'date'
 
 class Fluent::SumologicOutput< Fluent::BufferedOutput
-  Fluent::Plugin.register_output('sumologic', self)
+  Fluent::Plugin.register_output('logsene', self)
 
-  config_param :host, :string,  :default => 'collectors.sumologic.com'
+  config_param :host, :string,  :default => 'collectors.logsene.com'
   config_param :port, :integer, :default => 443
   config_param :path, :string,  :default => '/receiver/v1/http/XXX'
   config_param :format, :string, :default => 'json'
