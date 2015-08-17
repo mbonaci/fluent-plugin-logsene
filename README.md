@@ -23,13 +23,11 @@ Or install it yourself as:
     $ gem install fluent-plugin-logsene
 
 ## Usage
-Simply replace the dummy application token in the `path` configuration setting with the one you can find on the `App Actions > App Settings` or the `Integration` page when you sign in on [sematext.com](sematext.com).
+Simply replace the dummy application token in the `path` configuration setting with the one you can find on the `App Actions > App Settings` or the `Integration` page when you sign in on [sematext.com](sematext.com).  
+Of course, you should customize the match regex to include your logs of choice.
 
-      <match *.apache.*>
+      <match *.syslog.*>
         type logsene
-        host logsene-receiver.sematext.com
-        port 80
-        format json
         path /5233x41x-3xx5-8754-x354-xxx1x018ex33x
       </match>
 
