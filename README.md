@@ -1,4 +1,4 @@
-# Logsene Fluent Plugin
+# Fluent Logsene Plugin
 [Fluentd](http://fluentd.org) output plugin for [Logsene](http://sematext.com/logsene).
 
 ## Installation
